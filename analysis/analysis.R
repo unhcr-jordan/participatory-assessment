@@ -21,7 +21,7 @@ library(topicmodels)
 # https://gist.github.com/inkhorn/7257840
 
 
-data <- read.csv("PAMatrix8April.csv")
+data <- read.csv("data/PAMatrix8April.csv")
 
 # Once I read it into R, I have to get rid of the /t
 # characters so that it's more acceptable to the tm package

@@ -2,17 +2,79 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>LDAvis</title>
-    <script src="d3.v3.js"></script>
-    <script src="ldavis.js"></script>
-    <link rel="stylesheet" type="text/css" href="lda.css">
-  </head>
+    
+    
+    <title>Participatory Assessment - Topic Modelling</title>
+    
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="legoupil@unhcr.org">
 
-  <body>
-    <div id = "lda"></div>
-    <script>
-      var vis = new LDAvis("#lda", "lda.json");
-    </script>
+    <link href="http://www.unhcr.org/favicon.ico" rel="icon" type="image/x-icon">  
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/lda.css">
+    
+    <script src="js/d3.v3.js"></script>
+    <script src="js/ldavis.js"></script>  
+  </head>
+  <body style="zoom: 1;">    
+    <header class="with-border">
+      <div class="viewport">
+        <a id="logo" href="http://data.unhcr.org/jordan"></a>
+        <div id="dot"></div>
+        <div id="nav">
+          <a  class="link" href="http://data.unhcr.org/jordanindex.html" > Jordan Refugee Response</a>
+          <a  class="link" href="http://data.unhcr.org/jordancoordination.html" > Coordination Structure</a>
+          <a  class="link" href="http://data.unhcr.org/jordanteam.html" > Support Team</a>
+        </div>       
+        <div id="mininav">
+          <button></button>
+          <ul>
+            <li><a class="link" href="http://data.unhcr.org/jordanindex.html" > Jordan Refugee Response</a></li>
+            <li><a class="link" href="http://data.unhcr.org/jordancoordination.html" > Coordination Structure</a></li>
+            <li><a class="link" href="http://data.unhcr.org/jordanteam.html" > Support Team</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    
+    
+      <div class="viewport">
+        <h1>Refugees Participatory Assessment - Topic Modelling</h1>
+        
+         <h4>A topic model is a type of <a href="http://en.wikipedia.org/wiki/Topic_model" target="_blank">statistical model<a> for discovering the abstract "topics" that occur in a collection of documents. A topic model captures the intuition of word occurrence and combination in a mathematical framework, which allows examining a set of documents and discovering, based on the statistics of the words in each, what the topics might be and what each document's balance of topics is.</h4>
+		 
+		 <p> The details of the analysis workflow are accessible <a href="http://en.wikipedia.org/wiki/Topic_model" target="_blank">here<a></p>.
+         
+         <br >
+  
+            <div id = "lda"></div>
+            <script>
+              var vis = new LDAvis("#lda", "data/lda.json");
+            </script>
+            <div class="clearfix"></div>
+      </div>
+
+      <footer>
+          <div class="top">
+            <div class="viewport">
+              <div id="footer-products">
+              </div>
+              <div id="footer-about">
+              </div>
+              <div id="contact-about">
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="bottom">
+            <div class="viewport">
+              Powered by UNHCR Jordan <img src="images/unhcr.png">
+            </div>
+          </div>
+      </footer>
   </body>
 
 </html>
