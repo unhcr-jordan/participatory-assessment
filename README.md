@@ -11,3 +11,5 @@ More examples here:
  http://cpsievert.github.io/LDAvis/reviews/reviews.html
  https://gist.github.com/inkhorn/9044779
  https://gist.github.com/inkhorn/7257840
+ 
+ ## Introd here: http://eprints.pascal-network.org/archive/00000017/01/Tutorial_Marko.pdf
