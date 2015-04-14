@@ -6,7 +6,7 @@ install.packages("tm")
 install.packages("tm.plugin.mail")
 install.packages("SnowballC")
 install.packages("topicmodels")
-
+install.packages("LDAvis")
 
 
 library(stringr)
@@ -15,6 +15,7 @@ library(tm)
 library(tm.plugin.mail)
 library(SnowballC)
 library(topicmodels)
+library(LDAvis)
 
 # http://cpsievert.github.io/LDAvis/reviews/reviews.html
 # https://gist.github.com/inkhorn/9044779
